@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ego_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_item/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_mail/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_passport/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_portal/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_rabbitmq_receive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_rabbitmq_sender/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego_trade/src/main/java" charset="UTF-8" />
+  </component>
+</project>

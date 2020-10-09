@@ -1,0 +1,72 @@
+Techniques used in this demo:
+1. JSP                 10. MyBatis PageHelper
+2. JQuery              11. Dubbo
+3. EasyUI              12. FastDFS-java-client
+4. Spring Boot         13. Spring Data from Apache Solr
+5. Spring MVC          14: Spring AMQP
+6. MyBatis             15: Spring Data Redis
+7. MyBatis Generator   16: Spring Security
+8. Druid               17: HttpClient/RestTemplate
+9. Logback
+
+
+Developed Environment
+1. Maven               8. RabbitMQ
+2. Linux               9. Redis
+3. Itellij             10. MyCat
+4. Zookeeper           11. MySQL
+5. FastDFS             12. Tomcat
+6. Nginx
+7. Solr
+
+Staffing tables
+1. Product Manager : 4  (Figure out the blueprint and the requirement)
+2. Senior Product Manager : 1  (Supervice the product)
+3. Front End Group : 5  (Make the prototype of static page followed by PM)
+4. Back End Group : 20 (implement the service)
+5. Testing Group : 5   (Test all functions required)
+6. Maintainance Group : 3
+
+Product Period:
+6 months
+
+ego_parent: parent module（maven 项目使用下划线，不要使用中划线）
+    ego_pojo: pojo module
+    ego_api : interface module
+    ego_mapper: mapper used by myBatis, mapping to database
+    ego_provider: implementation of interface module
+    ego_commons: commons utils for all project
+    ego_manage:the backend system of project
+    ego_portal: main page
+    ego_search: solr search -> can change to elaste search
+    ego_item: info of items
+    ego_cart: cart
+    ego_passport: single point login system
+    ego_trade: trade system
+    ego_redis: redis relavant
+    ego_rabbitmq_sender: rabbitmq sending message
+    ego_rabbitmq_receive: monitoring rabbitmq queue
+
+
+基于Dubbo 进行实现SOA 架构
+    把项目分为表现层和服务层。
+    表现层：Dubbo 中的Consumer。
+    服务层：Dubbo 中的Provider。
+    互联网发展，除了叫做SOA 架构，又可以称为RPC 软件模型。RPC 软件模型和SOA 架
+    构是两个概念。发展到目前SOA 架构和RPC 软件模型都属于服务综合治理，在其中都包含：
+    负载均衡、服务容灾、缓存等。
+
+
+
+
+
+电商行业的几种模式.
+1.1B2B
+企业到企业，商家到商家。代表：阿里巴巴、慧聪网。
+1.2B2C
+商家到客户。代表：京东、淘宝商城（B2B2C）。
+1.3C2C
+客户到客户。淘宝集市。
+1.4O2O
+线上到线下。
+

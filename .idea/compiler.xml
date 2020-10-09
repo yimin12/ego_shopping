@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ego_search" />
+        <module name="ego_provider" />
+        <module name="ego_portal" />
+        <module name="ego_cart" />
+        <module name="ego_pojo" />
+        <module name="ego_mail" />
+        <module name="ego_rabbitmq_receive" />
+        <module name="ego_manage" />
+        <module name="ego_api" />
+        <module name="ego_passport" />
+        <module name="ego_rabbitmq_sender" />
+        <module name="ego_trade" />
+        <module name="ego_commons" />
+        <module name="ego_mapper" />
+        <module name="ego_item" />
+        <module name="ego_redis" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ego_api" options="-parameters" />
+      <module name="ego_cart" options="-parameters" />
+      <module name="ego_commons" options="-parameters" />
+      <module name="ego_item" options="-parameters" />
+      <module name="ego_mail" options="-parameters" />
+      <module name="ego_manage" options="-parameters" />
+      <module name="ego_mapper" options="-parameters" />
+      <module name="ego_parent" options="-parameters" />
+      <module name="ego_passport" options="-parameters" />
+      <module name="ego_pojo" options="-parameters" />
+      <module name="ego_portal" options="-parameters" />
+      <module name="ego_provider" options="-parameters" />
+      <module name="ego_rabbitmq_receive" options="-parameters" />
+      <module name="ego_rabbitmq_sender" options="-parameters" />
+      <module name="ego_redis" options="-parameters" />
+      <module name="ego_search" options="-parameters" />
+      <module name="ego_trade" options="-parameters" />
+    </option>
+  </component>
+</project>

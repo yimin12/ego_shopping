@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    # restful url querying
+    url: jdbc:mysql://localhost:3306/ego?useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+    druid:
+      # basic info of connection pool: initSize, idelSize, maxSize
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000 # milliseconds
+      # set the interval of periodly check, we need the free the idel connections
+      time-between-eviction-runs-millis: 60000
+      # set the minimal alive time
+      min-evictable-idle-time-millis: 300000
+      validation-query: 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      # set the cache for every connected resource
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      # monitor the filters, not record for sql after shutdown, 'wall' is used for firewall
+      filters: stat,wall,slf4j
+      # lazy SQL record
+      connection-properties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      web-stat-filter:
+        enabled: true
+        url-pattern: "/*"
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+      # configure the DruidStatViewServlet
+      stat-view-servlet:
+        url-pattern: "/druid/*"
+        # default white list is empty
+        # allow: 127.0.0.1, 192.163.119.x
+        reset-enable: false
+        login-username: admin
+        login-password: 123456
+
+# mybatis relevant
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml

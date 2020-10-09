@@ -1,0 +1,22 @@
+dubbo:
+  application:
+    name: ego-search
+  registry:
+    address: zookeeper://192.168.119.7:2181
+
+server:
+  port: 8083
+
+# Spring MVC View
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  profiles:
+    active: commons, redis
+  # solr
+  data:
+    solr:
+      host: http://192.168.119.11:8983/solr

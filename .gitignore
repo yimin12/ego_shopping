@@ -1,0 +1,15 @@
+# Project exclude paths
+/ego_api/target/
+/ego_cart/target/
+/ego_commons/target/
+/ego_item/target/
+/ego_manage/target/
+/ego_mapper/target/
+/ego_passport/target/
+/ego_pojo/target/
+/ego_portal/target/
+/ego_provider/target/
+/ego_rabbitmq_sender/target/
+/ego_redis/target/
+/ego_search/target/
+/ego_trade/target/

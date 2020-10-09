@@ -1,0 +1,15 @@
+dubbo:
+  application:
+    name: ego-trade
+  registry: zookeeper://192.168.119.7:2181
+
+server:
+  port: 8086
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  profiles:
+    active: commons,redis,rabbitmq

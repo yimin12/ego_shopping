@@ -1,0 +1,18 @@
+dubbo:
+  application:
+    name: ego-passport
+  registry:
+    address: zookeeper://192.168.119.7:2181
+
+server:
+  port:8084
+
+# Spring MVC View Parser
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  profiles:
+    active: commons,redis

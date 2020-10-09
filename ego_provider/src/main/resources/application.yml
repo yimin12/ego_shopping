@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: mapper
+
+dubbo:
+  application:
+    name: ego-provider
+  registry:
+    address: zookeeper://192.168.119.7:2181

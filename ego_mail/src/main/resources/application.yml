@@ -1,0 +1,12 @@
+spring:
+  mail:
+    username: hymlaucs@gmail.com
+    password: ------------------
+    host: smtp.gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+
+server:
+  port: 9999

@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 192.168.119.10
+    username: admin
+    password: admin
+  profiles:
+    active: commons,redis
+
+dubbo:
+  application:
+    name: ego-receive
+  registry:
+    address: zookeeper://192.168.119.7:2181

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>yimin.ego</groupId>
+    <artifactId>ego_parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- sub modules -->
+    <modules>
+        <module>ego_pojo</module>
+        <module>ego_mapper</module>
+        <module>ego_api</module>
+        <module>ego_provider</module>
+        <module>ego_manage</module>
+        <module>ego_commons</module>
+        <module>ego_pojo</module>
+        <module>ego_mapper</module>
+        <module>ego_api</module>
+        <module>ego_commons</module>
+        <module>ego_provider</module>
+        <module>ego_manage</module>
+        <module>ego_portal</module>
+        <module>ego_item</module>
+        <module>ego_redis</module>
+        <module>ego_rabbitmq_sender</module>
+        <module>ego_rabbitmq_receive</module>
+        <module>ego_search</module>
+        <module>ego_passport</module>
+        <module>ego_cart</module>
+        <module>ego_trade</module>
+        <module>ego_mail</module>
+    </modules>
+
+    <!-- Spring Boot的父项目，声明所有Spring Boot相关版本 -->
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.2.5.RELEASE</version>
+    </parent>
+
+    <properties>
+        <springframework-version>5.2.4.RELEASE</springframework-version>
+        <spring-version>2.2.5.RELEASE</spring-version>
+        <dubbo-version>2.7.5</dubbo-version>
+        <curator-version>3.1.0</curator-version>
+        <mybatis-springboot-version>2.1.1</mybatis-springboot-version>
+        <mysql-driver-version>5.1.48</mysql-driver-version>
+        <jstl-version>1.2</jstl-version>
+        <tomcat-jsp-version>9.0.31</tomcat-jsp-version>
+        <druid-springboot-version>1.1.10</druid-springboot-version>
+        <pagehelper-springboot-version>1.2.13</pagehelper-springboot-version>
+        <page-version>5.1.11</page-version>
+        <fastdfs-version>1.27</fastdfs-version>
+        <common-lang3-version>3.4</common-lang3-version>
+        <httpclient-version>4.5.10</httpclient-version>
+        <jackson-version>2.10.3</jackson-version>
+        <servlet-version>4.0.1</servlet-version>
+        <spring-session-version>2.2.2.RELEASE</spring-session-version>
+    </properties>
+    <!-- all the version used by sub modules are managed by parent module -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Session 分布式事务，在登录时使用-->
+            <dependency>
+                <groupId>org.springframework.session</groupId>
+                <artifactId>spring-session-data-redis</artifactId>
+                <version>${spring-session-version}</version>
+            </dependency>
+            <!-- dubbo's provider, declare the injection of spring framework，如果给 spring-boot-start-web 还需要修改端口-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- dubbo's consumer-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- dubbo -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>${curator-version}</version>
+            </dependency>
+            <!-- mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-springboot-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-driver-version}</version>
+            </dependency>
+            <!-- jsp parser-->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-jasper</artifactId>
+                <scope>provided</scope>
+                <version>${tomcat-jsp-version}</version>
+            </dependency>
+            <!-- druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-springboot-version}</version>
+            </dependency>
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-springboot-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${page-version}</version>
+            </dependency>
+            <!-- fastdfs -->
+            <dependency>
+                <groupId>cn.bestwu</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>${fastdfs-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${common-lang3-version}</version>
+            </dependency>
+            <!-- solr-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-solr</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- redis-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- rabbitmq-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- security-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- httpclient-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient-version}</version>
+            </dependency>
+            <!-- jackson-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <!-- servlet-->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet-version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${springframework-version}</version>
+            </dependency>
+            <!-- java mail -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-mail</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <!-- used for View -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,28 @@
+ego:
+  fastdfs:
+    nginx: http://192.168.119.8:8888/
+  bigad:
+    categoryId: 89
+  rabbitmq:
+    content:
+      queueName: content
+    item:
+      insertName: insertitem
+      deleteName: deleteitem
+    order:
+      createorder: createorder
+      deletecart: deletecart
+    mail: mail
+
+  search:
+    insert: http://localhost:8083/insert
+    delete: http://localhost:8083/delete
+  item:
+    details:
+      rediskey: 'yimin.ego.item::details:'
+  cart:
+    tempcart: tempcart
+    rediskey: 'cart:'
+    deletecarturl: http://localhost:8085/cart/deleteByIds
+  passport:
+    loginUrl: http://localhost:8084/user/showLogin

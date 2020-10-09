@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: ego-cart
+  registry:
+    address: zookeeper://192.168.119.7:2181
+
+server:
+  port: 8085
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  profiles:
+    active: commons,redis
