@@ -31,7 +31,28 @@ Ego website is temporarily shutdown for the reason that I do not want to maintai
 
 ## Background
 
-Standard Readme started with the issue originally posed by [@maxogden](https://github.com/maxogden) over at [feross/standard](https://github.com/feross/standard) in [this issue](https://github.com/feross/standard/issues/141), about whether or not a tool to standardize readmes would be useful. A lot of that discussion ended up in [zcei's standard-readme](https://github.com/zcei/standard-readme/issues/1) repository. While working on maintaining the [IPFS](https://github.com/ipfs) repositories, I needed a way to standardize Readmes across that organization. This specification started as a result of that.
+### E-commerce architecture
+
+B2B Architecture
+: Business-to-business (B2B or, in some countries, BtoB) e.g. Alibaba
+
+B2C Architecture
+: Business-to-client e.g. JD, Tmall, Amazon, WayFair
+
+C2C Architecture
+: Client-to-Client e.g. Ebay, XianYu
+
+O2O Architecture
+: Online-to-Offline e.g. MeiTuan, Elema
+
+### Technology selection
+
+|  Selection  |   Version   | 
+|    :---:    |    :----:   |   
+|  Maven      |    3.6.3    |  
+|Linux(Centos)|    8.0.1    |        
+|   Itellij   |    11.0.6   |        
+
 
 > Your documentation is complete when someone can use your module without ever
 having to look at its code. This is very important. This makes it possible for
