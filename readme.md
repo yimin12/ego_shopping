@@ -47,7 +47,7 @@ O2O Architecture
 
 ### Technology selection
 
-| Selection |            
+| Selection |            |
 |   :---:   |    :---:   |
 |   JSP     | Spring AMQP|  
 |   JQuery  | Spring Data|
@@ -80,22 +80,22 @@ O2O Architecture
 
 Split according to the function module and divide the functions that need to be completed into the following items.
 
--[ego_parent] : Parent module
-    -[ego_pojo] : Real entity module
-    -[ego_api] : Application Programming Interface
-    -[ego_mapper] : Provide implementation to access database
-    -[ego_provider] : Implementation of ego_api
-    -[ego_commons] : All shared resources. e.g. Configurations, Utils class, Common Pojo 
-    -[ego_manage] : Backend System. 
-    -[ego_portal] : Portal
-    -[ego_search] : Provide Solr Search Function
-    -[ego_item] : Details of Product
-    -[ego_cart] : Cart
-    -[ego_passport] : Single point login system
-    -[ego_trade] : Trade System
-    -[ego_redis] : Redis Operations.
-    -[ego_rabbitmq_sender] : Sending message to rabbitMQ
-    -[ego_rabbitmq_receive] : Monitoring the message queue
+- [ego_parent](#ego_parent) : Parent module
+    - [ego_pojo](#ego_pojo) : Real entity module
+    - [ego_api](#ego_api) : Application Programming Interface
+    - [ego_mapper](#ego_mapper) : Provide implementation to access database
+    - [ego_provider](#ego_provider) : Implementation of ego_api
+    - [ego_commons](#ego_commons) : All shared resources. e.g. Configurations, Utils class, Common Pojo 
+    - [ego_manage](#ego_manage) : Backend System. 
+    - [ego_portal](#ego_portal) : Portal
+    - [ego_search](#ego_search) : Provide Solr Search Function
+    - [ego_item](#ego_item) : Details of Product
+    - [ego_cart](#ego_cart) : Cart
+    - [ego_passport](#ego_passport) : Single point login system
+    - [ego_trade](#ego_trade) : Trade System
+    - [ego_redis](#ego_redis) : Redis Operations.
+    - [ego_rabbitmq_sender](#ego_rabbitmq_sender) : Sending message to rabbitMQ
+    - [ego_rabbitmq_receive](#ego_rabbitmq_receive) : Monitoring the message queue
 
 
 > Remember: the documentation, not the code, defines what a module does.
