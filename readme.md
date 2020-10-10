@@ -18,7 +18,7 @@ Ego website is temporarily shutdown for the reason that I do not want to maintai
 
 ## Table of Contents
 
-- [Background Introduction](#background)
+- [Background Introduction](#background introduction)
 - [Configuration](#configuration)
 - [Usage](#usage)
     - [Generator](#generator)
@@ -103,7 +103,17 @@ Split according to the function module and divide the functions that need to be 
 
 ## Configuration
 
-
+> There are totally 10 servers
+>
+> Server_1 : Zookeeper (192.168.119.7)
+> Server_2 : FastDFS (192.168.119.8)
+> Server_3 : Redis (192.168.119.9)
+> Server_4 : RabbitMQ (192.168.119.10)
+> Server_5 : Solr (192.168.119.11)
+> Server_7 : MySQL Master (192.168.119.12)
+> Server_8 : MySQL Salve1 (192.168.119.13)
+> Server_9 : MySQL Salve2 (192.168.119.14)
+> Server_10 : MyCat (192.168.119.15)
 
 
 
