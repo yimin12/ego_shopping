@@ -1,6 +1,6 @@
-# Standard Readme
+# Ego Shopping Project
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Author](https://img.shields.io/badge/Author-YiminH-orange)](https://www.linkedin.com/in/yimin-huang-amc/)
 
 A standard style for README files
 
@@ -100,7 +100,7 @@ To see how the specification has been applied, see the [example-readmes](example
 
 ## Maintainers
 
-[@RichardLitt](https://github.com/RichardLitt).
+[@YiminH](https://github.com/yimin12/).
 
 ## Contributing
 
@@ -111,7 +111,6 @@ Standard Readme follows the [Contributor Covenant](http://contributor-covenant.o
 ### Contributors
 
 This project exists thanks to all the people who contribute. 
-<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
 
 
 ## License
