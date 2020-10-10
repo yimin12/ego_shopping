@@ -47,12 +47,24 @@ O2O Architecture
 
 ### Technology selection
 
-|  Selection  |   Version   | 
+> 1. JSP  2. JQuery 3. EasyUI 4. SpringBoot 5. SpringMVC 6. MyBatis 7. MyBatis Generator 8. Druid 9. Logback 10. MyBatis PageHelper 11. Dubbo 12. FastDFS-java-client 13. Spring Data from Apache Solr 14. Spring AMQP 15. Spring Data Redis 16. Spring Security 17. HttpClient/RestTemplate
+
+### Developed Environment
+
+| Environment |   Version   | 
 |    :---:    |    :----:   |   
 |  Maven      |    3.6.3    |  
 |Linux(Centos)|    8.0.1    |        
 |   Itellij   |    11.0.6   |        
-
+|  Zookeeper  |    3.5.5    |
+|  FastDFS    |    5.0.8    |
+|    Nginx    |    1.16.1   |
+|    Solr     |    8.2.0    |
+|  RabbitMQ   |    3.7.17   |
+|    Redis    |    5.0.5    |
+|    MyCat    |    1.6      |
+|    MySQL    |    5.7.27   |
+|   Tomcat    |    9.0.38   |
 
 > Your documentation is complete when someone can use your module without ever
 having to look at its code. This is very important. This makes it possible for
