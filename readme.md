@@ -47,7 +47,17 @@ O2O Architecture
 
 ### Technology selection
 
-> 1. JSP  2. JQuery 3. EasyUI 4. SpringBoot 5. SpringMVC 6. MyBatis 7. MyBatis Generator 8. Druid 9. Logback 10. MyBatis PageHelper 11. Dubbo 12. FastDFS-java-client 13. Spring Data from Apache Solr 14. Spring AMQP 15. Spring Data Redis 16. Spring Security 17. HttpClient/RestTemplate
+| Selection |            |
+|   :---:   |    :---:   |
+|   JSP     | Spring AMQP|  
+|   JQuery  | Spring Data|
+|   EasyUI  | Spring Security|
+| SpringBoot| HttpClient |
+| SpringMVC | RestTemplate|
+|  MyBatis  | MyBatis PageHelper|
+|   Dubbo   | FastDFS-Java-Client|
+|   Druid   | LogBack    |
+| MyBatis Generator| 
 
 ### Developed Environment
 
@@ -66,11 +76,10 @@ O2O Architecture
 |    MySQL    |    5.7.27   |
 |   Tomcat    |    9.0.38   |
 
-> Your documentation is complete when someone can use your module without ever
-having to look at its code. This is very important. This makes it possible for
-you to separate your module's documented interface from its internal
-implementation (guts). This is good because it means that you are free to
-change the module's internals as long as the interface remains the same.
+### Functional module division
+
+
+
 
 > Remember: the documentation, not the code, defines what a module does.
 
