@@ -129,10 +129,6 @@ Zookeeper and Eureka can both be used as service registry center.
 
 
 
-## License
-
-[MIT](LICENSE) © Richard Littauer
-
 
 
 
