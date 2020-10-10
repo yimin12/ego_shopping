@@ -1,20 +1,19 @@
-# Ego Shopping Project
+# Ego Shopping Website
 
 [![Author](https://img.shields.io/badge/Author-YiminH-orange)](https://www.linkedin.com/in/yimin-huang-amc/)
 
-A standard style for README files
+## Preface
 
-Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
+I spent a month creating this e-commerce site project. Theoretically, this website can handle hundreds of millions of traffic at the same time. In China, this level of e-commerce platform has many, such as [Tmall](https://www.tmall.com/), [JD](https://www.jd.com/index.html) or [PDD](https://m.pinduoduo.com/). Of course, this kind of project is still far from the leading enterprises. I can't implement more details on my own in such a short time. This project mainly focuses on providing Service-Oriented Architecture and an example of handling high traffic volume.I hoped that some small and medium-sized projects can be solved after knowing this e-commerce project. Unlike today's popular Microserver Architecture, this project is essentially a distributed project which is friendly to some architect beginners. Welcome to have a discussion about it.
 
 This repository contains:
 
-1. [The specification](spec.md) for how a standard README should look.
-2. A link to a linter you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
-3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
-4. [A badge](#badge) to point to this spec.
-5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
+1. [The specification](spec.md) for how a standard e-commerce architecture should look.
+2. How different modules interact with each other.
+3. General ideas about why we use these techniques for implementations.
+4. Simple introduction of e-commerce architecture.
 
-Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
+Ego website is temporarily shutdown for the reason that I do not want to maintain server's fee.
 
 
 ## Table of Contents
