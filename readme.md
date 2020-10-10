@@ -18,8 +18,8 @@ Ego website is temporarily shutdown for the reason that I do not want to maintai
 
 ## Table of Contents
 
-- [Background](#background)
-- [Install](#install)
+- [Background Introduction](#background)
+- [Configuration](#configuration)
 - [Usage](#usage)
     - [Generator](#generator)
 - [Badge](#badge)
@@ -29,7 +29,7 @@ Ego website is temporarily shutdown for the reason that I do not want to maintai
 - [Contributing](#contributing)
 - [License](#license)
 
-## Background
+## Background Introduction
 
 ### E-commerce architecture
 
@@ -97,10 +97,19 @@ Split according to the function module and divide the functions that need to be 
     - [ego_rabbitmq_sender](#ego_rabbitmq_sender) : Sending message to rabbitMQ
     - [ego_rabbitmq_receive](#ego_rabbitmq_receive) : Monitoring the message queue
 
+> Remember: Only an architecture demo, not real world website
 
-> Remember: the documentation, not the code, defines what a module does.
 
-~ [Ken Williams, Perl Hackers](http://mathforum.org/ken/perl_modules.html#document)
+
+## Configuration
+
+
+
+
+
+
+
+
 
 Writing READMEs is way too hard, and keeping them maintained is difficult. By offloading this process - making writing easier, making editing easier, making it clear whether or not an edit is up to spec or not - you can spend less time worrying about whether or not your initial documentation is good, and spend more time writing and using code.
 
